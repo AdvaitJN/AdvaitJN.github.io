@@ -1,0 +1,118 @@
+<script lang="ts">
+	import Button from './Button.svelte';
+
+	let name = '';
+	let email = '';
+	let subject = '';
+	let message = '';
+	let sent = false;
+
+	function handleSubmit(e: Event) {
+		e.preventDefault();
+		// You can replace this with your actual send logic (API call, email, etc.)
+		sent = true;
+		// Reset the form (optional)
+		name = '';
+		email = '';
+		subject = '';
+		message = '';
+	}
+</script>
+
+<form class="contact-form" on:submit={handleSubmit} autocomplete="off">
+	<div>
+		<label for="name">Your Name</label>
+		<input id="name" type="text" bind:value={name} required placeholder="Enter your name" />
+	</div>
+	<div>
+		<label for="email">Your Email</label>
+		<input id="email" type="email" bind:value={email} required placeholder="Enter your email" />
+	</div>
+	<div>
+		<label for="subject">Your Subject</label>
+		<input id="subject" type="text" bind:value={subject} required placeholder="Subject" />
+	</div>
+	<div>
+		<label for="message">Your Message</label>
+		<textarea id="message" bind:value={message} required placeholder="Type your message here..."
+		></textarea>
+	</div>
+	<Button type="submit" disabled={!name || !email || !subject || !message}>Send Message</Button>
+
+	{#if sent}
+		<div class="sent-msg">Thank you! Your message was sent.</div>
+	{/if}
+</form>
+
+<style>
+	.contact-form {
+		max-width: 430px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		gap: 1.1rem;
+	}
+
+	.contact-form label {
+		color: #fff;
+		font-weight: 600;
+		margin-bottom: 0.2rem;
+		display: block;
+	}
+
+	.contact-form input,
+	.contact-form textarea {
+		width: 100%;
+		padding: 0.75rem;
+		border-radius: 0.75rem;
+		border: 1.5px solid #444;
+		background: #181716;
+		color: #fff;
+		font-size: 1rem;
+		margin-top: 0.15rem;
+		outline: none;
+		resize: none;
+		box-sizing: border-box;
+		transition: border-color 0.2s;
+	}
+	.contact-form input:focus,
+	.contact-form textarea:focus {
+		border-color: #ce872a;
+	}
+
+	.contact-form textarea {
+		min-height: 130px;
+		max-height: 320px;
+		font-family: inherit;
+		font-size: 1rem;
+	}
+
+	.contact-form button {
+		background: #ce872a;
+		color: #fff;
+		border: none;
+		padding: 0.85rem 2.2rem;
+		border-radius: 0.9rem;
+		font-size: 1.1rem;
+		font-weight: 700;
+		margin-top: 0.2rem;
+		cursor: pointer;
+		transition:
+			background 0.2s,
+			box-shadow 0.2s;
+		box-shadow: 0 1px 6px rgba(206, 135, 42, 0.12);
+	}
+
+	.contact-form button:hover,
+	.contact-form button:focus {
+		background: #db9b4c;
+		outline: none;
+	}
+
+	.sent-msg {
+		color: #ce872a;
+		font-weight: 600;
+		margin-top: 1rem;
+		text-align: center;
+	}
+</style>
