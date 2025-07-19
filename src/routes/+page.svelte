@@ -10,7 +10,6 @@
 	import WorksSection from '$lib/components/sections/WorksSection.svelte';
 	import SocialBar from '$lib/components/SocialBar.svelte';
 	import '../app.css';
-	// Add your TypeScript code here if needed
 </script>
 
 <div class="fixed">

@@ -6,7 +6,7 @@
 			<li><a href="#about">About</a></li>
 			<li><a href="#works">Works</a></li>
 			<li><a href="#services">Services</a></li>
-			<li><a href="#resume">Resume</a></li>
+			<li><a href="/AdvaitJayadevanNairResumeSU25.pdf" target="_blank">Resume</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
 		<div></div>
@@ -27,7 +27,7 @@
 	}
 
 	.headshot-background {
-		background-image: url('headshot.png');
+		background-image: url('./images/headshot.png');
 		background-repeat: no-repeat;
 		background-position: bottom left;
 		background-size: 100vh auto;
@@ -133,11 +133,5 @@
 
 	/* Extra extra large screens (≥1400px) */
 	@media (min-width: 1400px) {
-		.headshot-background {
-			background-image: url('headshot.png');
-			background-repeat: no-repeat;
-			background-position: bottom right;
-			background-size: auto calc(0.95 * 100vh);
-		}
 	}
 </style>

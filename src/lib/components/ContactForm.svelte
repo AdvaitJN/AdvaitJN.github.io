@@ -86,28 +86,6 @@
 		font-size: 1rem;
 	}
 
-	.contact-form button {
-		background: #ce872a;
-		color: #fff;
-		border: none;
-		padding: 0.85rem 2.2rem;
-		border-radius: 0.9rem;
-		font-size: 1.1rem;
-		font-weight: 700;
-		margin-top: 0.2rem;
-		cursor: pointer;
-		transition:
-			background 0.2s,
-			box-shadow 0.2s;
-		box-shadow: 0 1px 6px rgba(206, 135, 42, 0.12);
-	}
-
-	.contact-form button:hover,
-	.contact-form button:focus {
-		background: #db9b4c;
-		outline: none;
-	}
-
 	.sent-msg {
 		color: #ce872a;
 		font-weight: 600;
