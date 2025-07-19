@@ -27,7 +27,7 @@
 	}
 
 	.headshot-background {
-		background-image: url('./images/headshot.png');
+		background-image: url('/images/headshot.png');
 		background-repeat: no-repeat;
 		background-position: bottom left;
 		background-size: 100vh auto;
