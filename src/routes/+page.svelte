@@ -17,14 +17,9 @@
 	<SocialBar />
 	<ScrollDownIndicator />
 	<div class="fixed-letstalk-button">
-		<Button
-			type="button"
-			on:click={() => {
-				window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-			}}
-		>
-			Let's Talk
-		</Button>
+		<a href="#contact" class="btn-link">
+			<Button type="button">Let's Talk</Button>
+		</a>
 	</div>
 </div>
 
@@ -45,6 +40,10 @@
 		top: 40px;
 		right: 40px;
 		z-index: 1000;
+	}
+
+	.btn-link {
+		text-decoration: none;
 	}
 
 	/* Small screens (≥576px) */

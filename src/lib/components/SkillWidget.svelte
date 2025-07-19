@@ -14,8 +14,10 @@
 
 <style>
 	.card {
-		width: 6rem;
-		height: 6rem;
+		min-width: 6rem;
+		min-height: 6rem;
+		width: auto;
+		height: auto;
 		background: var(--background-color);
 		border-radius: 1rem;
 		box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.4);

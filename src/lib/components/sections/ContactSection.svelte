@@ -3,7 +3,7 @@
 	import SectionHeader from '$lib/components/SectionHeader.svelte';
 </script>
 
-<div class="container contact">
+<div id="contact" class="container contact">
 	<SectionHeader title="CONTACT ME" />
 	<div class="wrapper">
 		<div class="contact-details">

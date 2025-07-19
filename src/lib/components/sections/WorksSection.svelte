@@ -3,7 +3,7 @@
 	import Button from '../Button.svelte';
 </script>
 
-<div class="container">
+<div id="works" class="container">
 	<SectionHeader title="WORKS" base="background" />
 	<div class="wrapper">
 		<div class="showcase">

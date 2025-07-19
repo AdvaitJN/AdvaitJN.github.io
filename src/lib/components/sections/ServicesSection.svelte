@@ -41,7 +41,7 @@
 	];
 </script>
 
-<div class="container">
+<div id="services" class="container">
 	<SectionHeader title="SERVICES" base="background" />
 	<div class="wrapper">
 		<div class="grid">

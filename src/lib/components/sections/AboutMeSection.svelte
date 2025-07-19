@@ -4,7 +4,7 @@
 	import Button from '../Button.svelte';
 </script>
 
-<div class="container about">
+<div id="about" class="container about">
 	<SectionHeader title="ABOUT ME" />
 	<div class="wrapper">
 		<div class="aboutme">
@@ -59,8 +59,7 @@
 			</div>
 			<h4>CERTIFICATIONS</h4>
 			<div class="skill-grid">
-				<SkillWidget imgSrc="/images/skills/javascript-96.png" name="JavaScript" color="#f0db4f" />
-				<SkillWidget imgSrc="/images/skills/typescript.png" name="TypeScript" color="#3178c6" />
+				<SkillWidget imgSrc="/images/skills/awsccp-96.png" name="AWS CCP" color="#fff" />
 			</div>
 		</div>
 	</div>

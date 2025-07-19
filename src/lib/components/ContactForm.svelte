@@ -9,9 +9,8 @@
 
 	function handleSubmit(e: Event) {
 		e.preventDefault();
-		// You can replace this with your actual send logic (API call, email, etc.)
 		sent = true;
-		// Reset the form (optional)
+		// Reset the form
 		name = '';
 		email = '';
 		subject = '';
@@ -29,18 +28,18 @@
 		<input id="email" type="email" bind:value={email} required placeholder="Enter your email" />
 	</div>
 	<div>
-		<label for="subject">Your Subject</label>
+		<label for="subject">Subject</label>
 		<input id="subject" type="text" bind:value={subject} required placeholder="Subject" />
 	</div>
 	<div>
-		<label for="message">Your Message</label>
+		<label for="message">Message</label>
 		<textarea id="message" bind:value={message} required placeholder="Type your message here..."
 		></textarea>
 	</div>
 	<Button type="submit" disabled={!name || !email || !subject || !message}>Send Message</Button>
 
 	{#if sent}
-		<div class="sent-msg">Thank you! Your message was sent.</div>
+		<div class="sent-msg">Thank you! I will reply as soon as possible.</div>
 	{/if}
 </form>
 
