@@ -28,8 +28,12 @@
 		cursor: pointer;
 		transition: box-shadow 0.2s;
 	}
-	.card:hover {
-		box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.7);
+
+	.card:hover,
+	.card:focus-visible {
+		border: 2px solid var(--secondary-color);
+		box-shadow: 0 6px 24px rgba(206, 135, 42, 0.18);
+		z-index: 1;
 	}
 	.logo {
 		max-width: 70%;

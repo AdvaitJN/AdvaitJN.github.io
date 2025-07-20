@@ -14,7 +14,7 @@
 <style>
 	.btn {
 		padding: 1rem 1.5rem;
-		border: none;
+		border: 2px solid transparent;
 		border-radius: 1rem;
 		background: var(--secondary-color);
 		color: var(--background-color);
@@ -23,17 +23,26 @@
 		cursor: pointer;
 		display: flex;
 		align-items: center;
-		transition: background 0.2s;
+		transition:
+			background 0.2s,
+			color 0.2s;
 		justify-content: center;
 	}
 	svg {
-		color: var(--background-color);
+		color: inherit;
 	}
 	.btn:disabled {
 		background: #aaa;
 		cursor: not-allowed;
 	}
 	.btn:hover:enabled {
-		background: #005bb5;
+		background: var(--background-color);
+		color: var(--primary-color);
+	}
+	.btn:hover,
+	.btn:focus-visible {
+		border: 2px solid var(--secondary-color);
+		box-shadow: 0 6px 24px rgba(206, 135, 42, 0.18);
+		z-index: 1;
 	}
 </style>

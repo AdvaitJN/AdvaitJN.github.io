@@ -33,12 +33,9 @@
 				commitment to delivering results that matter.
 			</p>
 			<br />
-			<Button
-				type="button"
-				on:click={() => {
-					window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-				}}>Resume</Button
-			>
+			<a href="/AdvaitJayadevanNairResumeSU25.pdf" target="_blank" class="btn-link">
+				<Button type="button">Resume</Button>
+			</a>
 		</div>
 		<div class="skills">
 			<h4>SKILLS</h4>
@@ -67,6 +64,9 @@
 
 <style lang="scss">
 	/* Base styles (applied to all devices) */
+	.btn-link {
+		text-decoration: none;
+	}
 	.container {
 		padding: 40px;
 		height: auto;
