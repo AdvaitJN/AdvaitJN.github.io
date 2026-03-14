@@ -33,7 +33,7 @@
 				commitment to delivering results that matter.
 			</p>
 			<br />
-			<a href="/AdvaitJayadevanNairResumeSU25.pdf" target="_blank" class="btn-link">
+			<a href="/AdvaitJayadevanNairResumeSP26.pdf" rel="external" target="_blank" class="btn-link">
 				<Button type="button">Resume</Button>
 			</a>
 		</div>
@@ -57,6 +57,7 @@
 			<h4>CERTIFICATIONS</h4>
 			<div class="skill-grid">
 				<SkillWidget imgSrc="/images/skills/awsccp-96.png" name="AWS CCP" color="#fff" />
+				<SkillWidget imgSrc="/images/skills/awsdev-96.png" name="AWS Dev" color="#fff" />
 			</div>
 		</div>
 	</div>
