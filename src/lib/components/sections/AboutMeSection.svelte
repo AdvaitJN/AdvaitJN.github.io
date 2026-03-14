@@ -13,9 +13,9 @@
 			<br />
 			<p>
 				I graduated with a Bachelor of Science in Computer Science Engineering from The Ohio State
-				University, specializing in Artificial Intelligence. As an AWS Certified Solutions
-				Architect, I combine cloud expertise with a passion for building innovative, impactful
-				software solutions.
+				University, specializing in Artificial Intelligence. As an AWS Certified Developer, I
+				combine cloud expertise with a passion for building innovative, impactful software
+				solutions.
 			</p>
 			<br />
 			<p>

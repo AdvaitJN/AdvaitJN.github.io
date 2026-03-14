@@ -1,13 +1,13 @@
 <script lang="ts">
 	import Button from '$lib/components/Button.svelte';
-	import ContactForm from '$lib/components/ContactForm.svelte';
+	// import ContactForm from '$lib/components/ContactForm.svelte';
 	import ScrollDownIndicator from '$lib/components/ScrollDownIndicator.svelte';
-	import SectionHeader from '$lib/components/SectionHeader.svelte';
+	// import SectionHeader from '$lib/components/SectionHeader.svelte';
 	import AboutMeSection from '$lib/components/sections/AboutMeSection.svelte';
 	import ContactSection from '$lib/components/sections/ContactSection.svelte';
 	import LandingSection from '$lib/components/sections/LandingSection.svelte';
 	import ServicesSection from '$lib/components/sections/ServicesSection.svelte';
-	import WorksSection from '$lib/components/sections/WorksSection.svelte';
+	// import WorksSection from '$lib/components/sections/WorksSection.svelte';
 	import SocialBar from '$lib/components/SocialBar.svelte';
 	import '../app.css';
 </script>
@@ -26,7 +26,7 @@
 
 <AboutMeSection />
 
-<WorksSection />
+<!-- <WorksSection /> -->
 
 <ServicesSection />
 

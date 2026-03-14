@@ -1,10 +1,10 @@
 <div class="container headshot-background">
 	<nav>
-		<h1>AdvaitJN</h1>
+		<h1 class="logo">AdvaitJN</h1>
 		<ul class="nav-links">
 			<li><a href="/">Home</a></li>
 			<li><a href="#about">About</a></li>
-			<li><a href="#works">Works</a></li>
+			<!-- <li><a href="#works">Works</a></li> -->
 			<li><a href="#services">Services</a></li>
 			<li><a href="/AdvaitJayadevanNairResumeSU25.pdf" target="_blank">Resume</a></li>
 			<li><a href="#contact">Contact</a></li>
@@ -14,7 +14,7 @@
 	<div class="hero">
 		<div>
 			<p>Currently available for full time or freelance work</p>
-			<h1>Full-Stack Web Developer</h1>
+			<h1>Full-Stack Developer</h1>
 			<div></div>
 		</div>
 	</div>
@@ -22,6 +22,11 @@
 
 <style lang="scss">
 	/* Base styles (applied to all devices) */
+	.logo:hover {
+		color: var(--secondary-color);
+		user-select: none;
+		// pointer-events: none;
+	}
 	.nav-links {
 		display: none;
 	}
